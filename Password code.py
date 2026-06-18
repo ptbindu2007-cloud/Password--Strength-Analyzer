@@ -56,4 +56,10 @@ print(f"\nPassword Strength: {rating}")
 if feedback:
     print("Suggestions to improve:")
     for tip in feedback:
-        print(f"- {tip}")
+        print(f"- {tip}") 
+if __name__ == "__main__":
+    print("--- Password Strength Analyzer ---")
+    user_password = input("Enter a password to test: ")
+    result = analyze_password_strength(user_password)
+    print(f"Result: {result}")
+            
